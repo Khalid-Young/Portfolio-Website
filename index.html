@@ -19,7 +19,7 @@
 
     <!-- Fonts: use system stack for performance; easy to swap in CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Preload hero image (optional small SVG) -->
     <link rel="preload" href="assets/img/avatar.svg" as="image" type="image/svg+xml">
@@ -100,8 +100,8 @@
                                 <li>HTML</li><li>CSS</li><li>JavaScript</li>
                             </ul>
                             <div class="card-actions">
-                                <a class="btn btn-sm" href="https://example.com" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                                <a class="btn btn-sm btn-ghost" href="https://github.com/example" target="_blank" rel="noreferrer noopener">GitHub</a>
+                                <button class="btn btn-sm" data-modal-open="video-1">Live Demo</button>
+                                <a class="btn btn-sm btn-ghost" href="https://github.com/Khalid-Young/Portfolio-Website" target="_blank" rel="noreferrer noopener">GitHub</a>
                                 <button class="btn btn-sm btn-secondary" data-modal-open="project-1">Details</button>
                             </div>
                         </div>
@@ -134,8 +134,8 @@
                                 <li>TypeScript</li><li>CSS</li><li>Vite</li>
                             </ul>
                             <div class="card-actions">
-                                <a class="btn btn-sm" href="https://example.com" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                                <a class="btn btn-sm btn-ghost" href="https://github.com/example" target="_blank" rel="noreferrer noopener">GitHub</a>
+                                <button class="btn btn-sm" data-modal-open="video-2">Live Demo</button>
+                                <a class="btn btn-sm btn-ghost" href="https://github.com/Khalid-Young/-local_chat_website" target="_blank" rel="noreferrer noopener">GitHub</a>
                                 <button class="btn btn-sm btn-secondary" data-modal-open="project-2">Details</button>
                             </div>
                         </div>
@@ -168,8 +168,8 @@
                                 <li>HTML</li><li>PostCSS</li><li>JS</li>
                             </ul>
                             <div class="card-actions">
-                                <a class="btn btn-sm" href="https://example.com" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                                <a class="btn btn-sm btn-ghost" href="https://github.com/example" target="_blank" rel="noreferrer noopener">GitHub</a>
+                                <button class="btn btn-sm" data-modal-open="video-3">Live Demo</button>
+                                <a class="btn btn-sm btn-ghost" href="https://github.com/Khalid-Young/Construction_Website-master" target="_blank" rel="noreferrer noopener">GitHub</a>
                                 <button class="btn btn-sm btn-secondary" data-modal-open="project-3">Details</button>
                             </div>
                         </div>
@@ -179,6 +179,52 @@
         </section>
 
         <!-- Project Modals (progressive enhancement) -->
+        <!-- Video Modals -->
+        <div id="video-1" class="modal" role="dialog" aria-modal="true" aria-labelledby="video-1-title" hidden>
+            <div class="modal-backdrop" data-modal-close></div>
+            <div class="modal-content" role="document">
+                <header class="modal-header">
+                    <h3 id="video-1-title">Project Alpha — Live Demo</h3>
+                    <button class="icon-btn" aria-label="Close video" data-modal-close>&times;</button>
+                </header>
+                <div class="modal-body">
+                    <video controls playsinline preload="metadata" style="width:100%; height:auto; border-radius:8px;">
+                        <source src="assets/video/project-1-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="video-2" class="modal" role="dialog" aria-modal="true" aria-labelledby="video-2-title" hidden>
+            <div class="modal-backdrop" data-modal-close></div>
+            <div class="modal-content" role="document">
+                <header class="modal-header">
+                    <h3 id="video-2-title">Project Beta — Live Demo</h3>
+                    <button class="icon-btn" aria-label="Close video" data-modal-close>&times;</button>
+                </header>
+                <div class="modal-body">
+                    <video controls playsinline preload="metadata" style="width:100%; height:auto; border-radius:8px;">
+                        <source src="assets/video/project-2-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="video-3" class="modal" role="dialog" aria-modal="true" aria-labelledby="video-3-title" hidden>
+            <div class="modal-backdrop" data-modal-close></div>
+            <div class="modal-content" role="document">
+                <header class="modal-header">
+                    <h3 id="video-3-title">Project Gamma — Live Demo</h3>
+                    <button class="icon-btn" aria-label="Close video" data-modal-close>&times;</button>
+                </header>
+                <div class="modal-body">
+                    <video controls playsinline preload="metadata" style="width:100%; height:auto; border-radius:8px;">
+                        <source src="assets/video/project-3-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
         <div id="project-1" class="modal" role="dialog" aria-modal="true" aria-labelledby="project-1-title" hidden>
             <div class="modal-backdrop" data-modal-close></div>
             <div class="modal-content" role="document">
@@ -357,5 +403,4 @@
     <script src="js/main.js" defer></script>
 </body>
 </html>
-
 
